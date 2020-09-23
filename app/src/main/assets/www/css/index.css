@@ -1,0 +1,174 @@
+/*
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ */
+
+ body{
+   margin:0;
+   padding:0;
+ }
+ 
+ header{
+   position:fixed;
+   width: 100%;
+   background-color:#1D3A48;
+   color: white;
+   top: 0;
+   z-index: 500;
+   height: 28pt;
+   box-shadow: rgba(0, 0, 0, 0.4) 0 4px 6px;
+ }
+ 
+ header h5{
+   font-size: 12pt;
+   margin-top: -1pt;
+   padding-top: 8pt;
+   text-align: center;
+   text-shadow: white 0 0 10px;
+ }
+ 
+ .hamburger:hover{
+   overflow: hidden;
+ }
+ 
+ .hg-1, .hg-2, .hg-3{
+   background-color: white;
+   height: 5px;
+   width: 30px;
+   position: absolute;
+   right: 10px;
+   top: 6px;
+   border-radius: 8px;
+   transition: 1.3s;
+ }
+ 
+ .hamburger:hover .hg-1, .hamburger:hover .hg-2, .hamburger:hover .hg-3{
+   transform: rotate(180deg);
+   width: 12px;
+ }
+ 
+ .hg-2{
+   margin-top: 10px;
+ }
+ 
+ .hg-3{
+   margin-top: 20px;
+ }
+ 
+ .side{
+   background-color: #3C3C3C;
+   position: fixed;
+   width: 280px;
+   top: 0;
+   right: 0;
+   height: 100%;
+   margin-right: -100%;
+   transition: 1.2s;
+   box-shadow: rgba(0, 0, 0, 0.3) -6px 0 6px;
+ }
+ 
+ .hamburger:hover .side{
+   margin-right: 0;
+ }
+ 
+ .btn-switch{
+   border: none;
+   outline: none;
+   background-color: #007CB1;
+   color: white;
+   height: 30px;
+   border-radius: 5px;
+   width: 90%;
+   display: block;
+   margin: 8px auto;
+   box-shadow: rgba(30, 30, 30, 0.6) 0 6px 15px;
+   transition: 1s;
+ }
+ 
+ .active{
+   border: none;
+   outline: none;
+   background-color: #005481;
+   text-shadow: white 0 0 15px;
+   color: white;
+   height: 30px;
+   border-radius: 5px;
+   width: 90%;
+   display: block;
+   margin: 8px auto;
+   box-shadow: rgba(30, 30, 30, 0.6) 0 6px 15px;
+ }
+ 
+ 
+ .btn-switch:hover{
+   background-color: #005076;
+   color: grey;
+ }
+ 
+ .btn-preview{
+   border: none;
+   outline: none;
+   background-color: #00871E;
+   color: white;
+   text-shadow: white 0 0 4px;
+   box-shadow: rgba(20, 20, 20, 0.75) 0 5px 16px;
+   height: 30px;
+   border-radius: 5px;
+   width: 90%;
+   display: block;
+   margin: auto;
+   margin-top: 30px;
+   transition: 1s;
+ }
+ 
+ .btn-preview:hover{
+   background-color: #005515;
+   color: grey;
+   text-shadow: rgba(0,0,0,0) 0 0 0;
+ }
+ 
+.about{
+   border: none;
+   outline: none;
+   background-color: #3E3E3E;
+   color: white;
+   height: 30px;
+   border-radius: 5px;
+   width: 90%;
+   display: block;
+   margin: 16px auto;
+   box-shadow: rgba(30, 30, 30, 0.6) 0 6px 15px;
+   transition: 1s;
+ }
+ 
+ #editorHTML, #editorCSS, #editorJS, #result{
+   position:absolute;
+   top: 37px;
+   right:0;
+   left:0;
+   bottom:0;
+   display: block;
+ }
+ 
+ #result{
+   height: 100%;
+   width: 100%;
+ }
+ 
+ #editorCSS, #editorJS, #result{
+   display: none;
+ }
